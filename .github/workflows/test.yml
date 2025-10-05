@@ -19,3 +19,15 @@ jobs:
 
       - name: Run tests
         run: python -m unittest CalcTest.py
+      
+      - name: Install coverage tool
+        run: pip install coverage flake8
+
+      - name: Run coverage test
+        run: coverage run -m unittest CalcTest.py
+
+      - name: Show coverage report
+        run: coverage report -m
+
+      - name: Static analysis
+        run: flake8 . --max-line-length=100
