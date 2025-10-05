@@ -19,7 +19,7 @@ class TestCalculator(unittest.TestCase):
 
     def test_div(self):
         calc = Calculator()
-        result = calc.div(20, 2)     # wrong test case here
+        result = calc.div(10, 2)     # fix test case here
         self.assertEqual(result, 5)  # Expect 10 / 2 = 5
     
     def test_div_by_zero(self):
