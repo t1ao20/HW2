@@ -1,9 +1,11 @@
 from abc import ABC, abstractmethod
 
+
 class Operation(ABC):
     @abstractmethod
     def execute(self, a, b):
         pass
+
 
 class AddOperation(Operation):
     def execute(self, a, b):
